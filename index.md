@@ -31,10 +31,18 @@ title: Home
     color: #d1d5db;
   }
 
+  /* 2x2 grid for cards */
   .info-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
     gap: 25px;
+  }
+
+  /* Mobile: 1 column */
+  @media (max-width: 768px) {
+    .info-cards {
+      grid-template-columns: 1fr;
+    }
   }
 
   .card {
