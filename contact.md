@@ -5,8 +5,8 @@ title: Contact
 
 <style>
   body {
-    background: #0f172a;
-    color: #e2e8f0;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: #ffffff;
     font-family: Arial, sans-serif;
   }
 
@@ -22,30 +22,29 @@ title: Contact
 
   .contact-header h1 {
     font-size: 36px;
-    color: #38bdf8;
+    color: #00f5d4;
     margin-bottom: 10px;
   }
 
   .contact-header p {
     font-size: 16px;
-    color: #94a3b8;
+    color: #cbd5e1;
   }
 
   .contact-cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-    margin-top: 20px;
   }
 
   @media (max-width: 768px) {
     .contact-cards {
-      grid-template-columns: 1fr; /* mobile: single column */
+      grid-template-columns: 1fr;
     }
   }
 
   .contact-card {
-    background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(12px);
     border-radius: 15px;
     padding: 30px;
@@ -56,7 +55,7 @@ title: Contact
 
   .contact-card:hover {
     transform: scale(1.05);
-    background: rgba(255,255,255,0.15);
+    background: rgba(255, 255, 255, 0.15);
   }
 
   .contact-card .icon {
@@ -66,7 +65,7 @@ title: Contact
 
   .contact-card h3 {
     font-size: 14px;
-    color: #cbd5e1;
+    color: #94a3b8;
     margin-bottom: 8px;
   }
 
@@ -77,7 +76,7 @@ title: Contact
   }
 
   .contact-card a {
-    color: #38bdf8;
+    color: #00f5d4;
     text-decoration: none;
   }
 
@@ -95,19 +94,19 @@ title: Contact
   <div class="contact-card">
     <div class="icon">📧</div>
     <h3>Email</h3>
-    <p><a href="mailto:ahmedsaeed3029@gmail.com">ahmedsaeed3029@gmail.com</a></p>
-  </div>
-
-  <div class="contact-card">
-    <div class="icon">💬</div>
-    <h3>WhatsApp</h3>
-    <p><a href="https://wa.me/923148664274" target="_blank">03148664274</a></p>
+    <p><a href="mailto:mohsinriaz@gmail.com">mohsinriaz@gmail.com</a></p>
   </div>
 
   <div class="contact-card">
     <div class="icon">🐙</div>
     <h3>GitHub</h3>
-    <p><a href="https://github.com/ahmedsaeed3029" target="_blank">ahmedsaeed3029</a></p>
+    <p><a href="https://github.com/m-mohsin-riaz" target="_blank">m-mohsin-riaz</a></p>
+  </div>
+
+  <div class="contact-card">
+    <div class="icon">💬</div>
+    <h3>WhatsApp</h3>
+    <p><a href="https://wa.me/923014144869" target="_blank">+92 301 4144869</a></p>
   </div>
 
   <div class="contact-card">
