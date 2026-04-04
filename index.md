@@ -5,30 +5,30 @@ title: Home
 
 <style>
   body {
-    background: #0f172a;
-    color: #e2e8f0;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
   }
 
   .hero {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: white;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 70px 40px;
     text-align: center;
     margin-bottom: 40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.1);
   }
 
   .hero h1 {
-    font-size: 40px;
+    font-size: 42px;
     margin-bottom: 10px;
-    color: #38bdf8;
+    color: #00f5d4;
   }
 
   .hero p {
     font-size: 18px;
-    color: #94a3b8;
-    margin-bottom: 5px;
+    color: #d1d5db;
   }
 
   .info-cards {
@@ -38,35 +38,35 @@ title: Home
   }
 
   .card {
-    background: #1e293b;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
     border-radius: 15px;
     padding: 25px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-    border-left: 4px solid #38bdf8;
     text-align: center;
+    border: 1px solid rgba(255,255,255,0.1);
     transition: 0.3s;
   }
 
   .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.15);
   }
 
   .card .icon {
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 10px;
   }
 
   .card h3 {
     font-size: 14px;
-    color: #94a3b8;
+    color: #cbd5e1;
     margin-bottom: 5px;
   }
 
   .card p {
     font-size: 16px;
     font-weight: bold;
-    color: #e2e8f0;
+    color: #ffffff;
   }
 </style>
 
@@ -99,11 +99,5 @@ title: Home
     <div class="icon">📅</div>
     <h3>Semester</h3>
     <p>2nd Semester</p>
-  </div>
-
-  <div class="card">
-    <div class="icon">💻</div>
-    <h3>Skills</h3>
-    <p>Python, C#, Database, GitHub</p>
   </div>
 </div>
