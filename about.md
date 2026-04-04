@@ -93,9 +93,8 @@ title: About
 <div class="about-section">
   <h2>💻 Skills</h2>
   <div class="skills-list">
-    <span class="skill-tag">HTML</span>
-    <span class="skill-tag">CSS</span>
-    <span class="skill-tag">MySQL</span>
+    <span class="skill-tag">Python</span>
+    <span class="skill-tag">C#</span>
     <span class="skill-tag">GitHub</span>
     <span class="skill-tag">Problem Solving</span>
   </div>
