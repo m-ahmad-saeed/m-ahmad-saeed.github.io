@@ -23,55 +23,36 @@ title: My Journey
     font-size: 16px;
     color: #cbd5e1;
   }
-  .timeline {
-    position: relative;
-    padding-left: 40px;
+
+  .journey-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
   }
-  .timeline::before {
-    content: '';
-    position: absolute;
-    left: 16px;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background: linear-gradient(to bottom, #00f5d4, #0077ff);
-    border-radius: 3px;
-  }
-  .timeline-item {
-    position: relative;
-    margin-bottom: 35px;
-  }
-  .timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -31px;
-    top: 18px;
-    width: 14px;
-    height: 14px;
-    background: #00f5d4;
-    border-radius: 50%;
-    border: 3px solid #0f172a;
-    box-shadow: 0 0 8px #00f5d4;
-  }
-  .timeline-card {
+
+  /* === CLICKABLE BUTTON CARD === */
+  .journey-btn {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(12px);
     border-radius: 15px;
-    padding: 25px 30px;
+    padding: 30px;
     border: 1px solid rgba(255,255,255,0.1);
+    cursor: pointer;
     transition: 0.3s;
+    text-align: left;
+    width: 100%;
   }
-  .timeline-card:hover {
-    transform: translateX(5px);
+  .journey-btn:hover {
+    transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.14);
+    border-color: #00f5d4;
   }
-  .card-icon-block {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 12px;
+  .journey-btn.active {
+    border-color: #00f5d4;
+    background: rgba(0, 245, 212, 0.08);
   }
-  .card-icon-block .icon-circle {
+  .icon-circle {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -79,53 +60,80 @@ title: My Journey
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
-  .card-icon-block .icon-circle i {
+  .icon-circle i {
     font-size: 26px;
     color: #00f5d4;
   }
-  .card-icon-block .semester-label {
+  .btn-label {
     font-size: 12px;
     color: #00f5d4;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-bottom: 4px;
   }
-  .timeline-card h2 {
-    font-size: 20px;
+  .btn-title {
+    font-size: 18px;
     color: #ffffff;
-    margin: 4px 0 5px 0;
+    font-weight: bold;
   }
-  .date {
+  .btn-date {
     font-size: 13px;
     color: #94a3b8;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
+    margin-top: 6px;
   }
-  .date i {
+  .btn-date i {
     color: #00f5d4;
+    margin-right: 4px;
   }
-  .timeline-card ul {
+  .btn-arrow {
+    float: right;
+    color: #00f5d4;
+    font-size: 18px;
+    margin-top: -30px;
+    transition: 0.3s;
+  }
+  .journey-btn.active .btn-arrow {
+    transform: rotate(180deg);
+  }
+
+  /* === DETAIL PANEL === */
+  .detail-panel {
+    display: none;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 15px;
+    padding: 30px;
+    border: 1px solid rgba(0, 245, 212, 0.2);
+    margin-top: -10px;
+    animation: fadeIn 0.3s ease;
+  }
+  .detail-panel.open {
+    display: block;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .detail-panel ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-  .timeline-card ul li {
+  .detail-panel ul li {
     font-size: 14px;
     color: #cbd5e1;
-    padding: 6px 0;
+    padding: 8px 0;
     border-bottom: 1px solid rgba(255,255,255,0.05);
     display: flex;
     align-items: center;
     gap: 10px;
   }
-  .timeline-card ul li:last-child {
+  .detail-panel ul li:last-child {
     border-bottom: none;
   }
-  .timeline-card ul li i {
+  .detail-panel ul li i {
     color: #00f5d4;
     font-size: 14px;
     min-width: 16px;
@@ -139,6 +147,9 @@ title: My Journey
     letter-spacing: 1px;
     margin: 15px 0 8px 0;
   }
+  .section-title:first-child {
+    margin-top: 0;
+  }
 </style>
 
 <div class="journey-header">
@@ -146,19 +157,21 @@ title: My Journey
   <p>My academic path at UET Faisalabad — semester by semester</p>
 </div>
 
-<div class="timeline">
+<div class="journey-grid">
 
-  <!-- Admission -->
-  <div class="timeline-item">
-    <div class="timeline-card">
-      <div class="card-icon-block">
-        <div class="icon-circle">
-          <i class="fas fa-flag-checkered"></i>
-        </div>
-        <div class="semester-label">Starting Point</div>
+  <!-- Admission Button -->
+  <div>
+    <button class="journey-btn" onclick="togglePanel('admission', this)">
+      <div class="icon-circle">
+        <i class="fas fa-flag-checkered"></i>
       </div>
-      <h2>Admission — UET Faisalabad</h2>
-      <div class="date"><i class="fas fa-calendar-alt"></i> 2023</div>
+      <div class="btn-label">Starting Point</div>
+      <div class="btn-title">Admission</div>
+      <div class="btn-date"><i class="fas fa-calendar-alt"></i> 2023</div>
+      <i class="fas fa-chevron-down btn-arrow"></i>
+    </button>
+    <div class="detail-panel" id="admission">
+      <div class="section-title">Details</div>
       <ul>
         <li><i class="fas fa-university"></i> University of Engineering & Technology, Faisalabad</li>
         <li><i class="fas fa-laptop"></i> Program: BS Computer Science</li>
@@ -167,17 +180,18 @@ title: My Journey
     </div>
   </div>
 
-  <!-- Semester 1 -->
-  <div class="timeline-item">
-    <div class="timeline-card">
-      <div class="card-icon-block">
-        <div class="icon-circle">
-          <i class="fas fa-graduation-cap"></i>
-        </div>
-        <div class="semester-label">Semester 1</div>
+  <!-- Semester 1 Button -->
+  <div>
+    <button class="journey-btn" onclick="togglePanel('sem1', this)">
+      <div class="icon-circle">
+        <i class="fas fa-graduation-cap"></i>
       </div>
-      <h2>First Semester</h2>
-      <div class="date"><i class="fas fa-calendar-alt"></i> Fall 2023</div>
+      <div class="btn-label">Semester 1</div>
+      <div class="btn-title">First Semester</div>
+      <div class="btn-date"><i class="fas fa-calendar-alt"></i> Fall 2023</div>
+      <i class="fas fa-chevron-down btn-arrow"></i>
+    </button>
+    <div class="detail-panel" id="sem1">
       <div class="section-title">Subjects</div>
       <ul>
         <li><i class="fas fa-code"></i> Introduction to Computing</li>
@@ -194,17 +208,18 @@ title: My Journey
     </div>
   </div>
 
-  <!-- Semester 2 -->
-  <div class="timeline-item">
-    <div class="timeline-card">
-      <div class="card-icon-block">
-        <div class="icon-circle">
-          <i class="fas fa-book-open"></i>
-        </div>
-        <div class="semester-label">Semester 2</div>
+  <!-- Semester 2 Button -->
+  <div>
+    <button class="journey-btn" onclick="togglePanel('sem2', this)">
+      <div class="icon-circle">
+        <i class="fas fa-book-open"></i>
       </div>
-      <h2>Second Semester</h2>
-      <div class="date"><i class="fas fa-calendar-alt"></i> Spring 2024</div>
+      <div class="btn-label">Semester 2</div>
+      <div class="btn-title">Second Semester</div>
+      <div class="btn-date"><i class="fas fa-calendar-alt"></i> Spring 2024</div>
+      <i class="fas fa-chevron-down btn-arrow"></i>
+    </button>
+    <div class="detail-panel" id="sem2">
       <div class="section-title">Subjects</div>
       <ul>
         <li><i class="fas fa-code"></i> Object Oriented Programming (OOP)</li>
@@ -222,3 +237,20 @@ title: My Journey
   </div>
 
 </div>
+
+<script>
+  function togglePanel(id, btn) {
+    const panel = document.getElementById(id);
+    const isOpen = panel.classList.contains('open');
+
+    // Close all panels
+    document.querySelectorAll('.detail-panel').forEach(p => p.classList.remove('open'));
+    document.querySelectorAll('.journey-btn').forEach(b => b.classList.remove('active'));
+
+    // Open clicked one if it was closed
+    if (!isOpen) {
+      panel.classList.add('open');
+      btn.classList.add('active');
+    }
+  }
+</script>
