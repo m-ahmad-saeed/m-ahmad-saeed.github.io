@@ -2,12 +2,10 @@
 layout: default
 title: Contact
 ---
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
-  body {
-    background: linear-gradient(135deg, #141e30, #243b55);
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-  }
   .contact-header {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(10px);
@@ -52,13 +50,9 @@ title: Contact
   .contact-card .icon {
     margin-bottom: 15px;
   }
-  .contact-card .icon svg {
-    width: 45px;
-    height: 45px;
-    fill: #00f5d4 !important;
-  }
-  .contact-card .icon svg path {
-    fill: #00f5d4 !important;
+  .contact-card .icon i {
+    font-size: 45px;
+    color: #00f5d4 !important;
   }
   .contact-card h3 {
     font-size: 14px;
@@ -89,9 +83,7 @@ title: Contact
   <!-- Email -->
   <div class="contact-card">
     <div class="icon">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="fill:#00f5d4; width:45px; height:45px;">
-        <path fill="#00f5d4" d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-      </svg>
+      <i class="fas fa-envelope"></i>
     </div>
     <h3>Email</h3>
     <p><a href="mailto:ahmadsaeed3029@gmail.com">ahmadsaeed3029@gmail.com</a></p>
@@ -100,5 +92,28 @@ title: Contact
   <!-- GitHub -->
   <div class="contact-card">
     <div class="icon">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="fill:#00f5d4; width:45px; height:45px;">
-        <path fill="#00f5d4" d="M12 0C5.37 0 0
+      <i class="fab fa-github"></i>
+    </div>
+    <h3>GitHub</h3>
+    <p><a href="https://github.com/m-ahmad-saeedz" target="_blank">m-ahmad-saeedz</a></p>
+  </div>
+
+  <!-- WhatsApp -->
+  <div class="contact-card">
+    <div class="icon">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <h3>WhatsApp</h3>
+    <p><a href="https://wa.me/923148664274" target="_blank">+92 3148664274</a></p>
+  </div>
+
+  <!-- University -->
+  <div class="contact-card">
+    <div class="icon">
+      <i class="fas fa-graduation-cap"></i>
+    </div>
+    <h3>University</h3>
+    <p>UET Faisalabad</p>
+  </div>
+
+</div>
