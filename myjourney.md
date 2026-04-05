@@ -65,17 +65,17 @@ title: My Journey
     <h1>From Village Challenges to Computer Engineering Dreams</h1>
 
     <h3>1. Overcoming Early Academic Struggles</h3>
-    <p>My journey started from a small village where education was not easy. Traveling daily to city for college was difficult, but I stayed strong.</p>
+    <p>My journey started from a small village where education was not easy. Traveling daily to the city for college was difficult, but I stayed strong and focused on my goals.</p>
 
     <h3>2. Preparing for UET</h3>
-    <p>I worked hard for UET test, practiced daily and improved my concepts.</p>
+    <p>I worked hard for the UET test, practiced regularly, and improved my concepts step by step.</p>
 
     <h3>3. Achieving My Goal</h3>
-    <p>I passed the test and got admission in Computer Engineering. It was a proud moment for me.</p>
+    <p>I passed the test and got admission in Computer Engineering. It was a proud moment for me and my family.</p>
   </div>
 </div>
 
-<!-- SEM 1 LIST -->
+<!-- SEM 1 -->
 <div id="sem1" class="page">
   <div class="back-btn" onclick="showPage('main-page')">← Back</div>
 
@@ -83,10 +83,6 @@ title: My Journey
     <div class="journey-btn" onclick="showPage('a1')">Article 1</div>
     <div class="journey-btn" onclick="showPage('a2')">Article 2</div>
     <div class="journey-btn" onclick="showPage('a3')">Article 3</div>
-    <div class="journey-btn" onclick="showPage('a4')">Article 4</div>
-    <div class="journey-btn" onclick="showPage('a5')">Article 5</div>
-    <div class="journey-btn" onclick="showPage('a6')">Article 6</div>
-    <div class="journey-btn" onclick="showPage('a7')">Article 7</div>
   </div>
 </div>
 
@@ -98,13 +94,13 @@ title: My Journey
 <h1>Article 1: My First Semester Journey</h1>
 
 <h3>1. A Difficult Start in a New Place</h3>
-<p>I came from another city, and starting my first semester was not easy. My first day at university was very difficult because it was my first experience living in a hostel. I missed my home, my family, and my comfortable life. Everything felt new and uncomfortable. The hostel environment was also not good for me. The food was not tasty, and I was given a big hall where many boys were living together. There was noise and no privacy, which made it hard for me to adjust..</p>
+<p>I came from another city, and starting my first semester was not easy. My first day at university was very difficult because it was my first experience living in a hostel. I missed my home, my family, and my comfortable life. The hostel environment was not good, food was not tasty, and I had to stay in a big hall with many students.</p>
 
 <h3>2. Facing Hostel Life and Starting Studies</h3>
-<p>The next day, we went to the university, and our classes started. This was the beginning of a new academic journey. The environment was different from college, and the level of study was more difficult. I had to manage both hostel life and studies at the same time. In the beginning, it was very hard for me, but slowly I started understanding things and adjusting to this new life..</p>
+<p>The next day, classes started. Everything was new and challenging. It was difficult to manage studies and hostel life together, but slowly I adjusted and started understanding the system.</p>
 
 <h3>3. Staying Strong</h3>
-<p>I Even though I faced many problems, I decided to stay strong. I knew that this was an important step in my life. These challenges made me more independent and responsible. Slowly, I started feeling better and became part of university life..</p>
+<p>Despite all difficulties, I stayed strong. These challenges made me independent and helped me grow.</p>
 
 </div>
 </div>
@@ -116,14 +112,14 @@ title: My Journey
 
 <h1>Article 2: First Semester Exams</h1>
 
-<h3>1.Making a Promise to Work Hard</h3>
-<p>I When our studies started, I made a strong decision that I would study hard and become successful in life. Teachers told us that university education is conceptual, which means we must understand topics deeply instead of just memorizing them.</p>
+<h3>1. Hard Work</h3>
+<p>I decided to study hard and focus on concepts because university study is different.</p>
 
-<h3>2. Understanding the New System</h3>
-<p>The paper system was completely different from what I experienced before. At first, I faced difficulty in understanding it. I felt confused and stressed, but I did not give up. I started asking questions, studying more, and improving my concepts step by step.</p>
+<h3>2. Understanding System</h3>
+<p>The paper system was difficult at first, but I improved with practice and effort.</p>
 
 <h3>3. Mid Success</h3>
-<p>I After two months, our mid exams started. It was my first university exam, and it was difficult. However, I worked hard and gave my best. When the results came, I passed with good marks. This success increased my confidence..</p>
+<p>I passed my mid exams with good marks which increased my confidence.</p>
 
 </div>
 </div>
@@ -133,101 +129,106 @@ title: My Journey
 <div class="back-btn" onclick="showPage('sem1')">← Back</div>
 <div class="article-body">
 
-<h1>Article 3: From Midterms to Finals: Friendship, Growth, and Success</h1>
+<h1>Article 3: Mid to Final Success</h1>
 
-<h3>1.Improving Study Habits</h3>
-<p>I After mid exams, I gained some experience about university studies. I started managing my time better and focused more on understanding concepts. I created a study routine and followed it regularly.</p>
+<h3>1. Study Improvement</h3>
+<p>I improved my study routine and focused more on understanding.</p>
 
-<h3>2. Friendship and Support</h3>
-<p>In the hostel, we became friends with each other. We studied together, helped each other in difficult subjects, and shared our problems. Sometimes, we also went out for outings to relax. Although the hostel food was not good, we managed everything together.</p>
+<h3>2. Friends</h3>
+<p>We studied together, helped each other, and enjoyed outings.</p>
 
-<h3>3. Final Exams Achievement</h3>
-<p>After two months, final exams started. They were challenging, but I was better prepared this time. I gave my best effort, and Alhamdulillah, I passed with good marks. It was a proud moment for me..</p>
+<h3>3. Final Achievement</h3>
+<p>I passed finals with good marks and felt proud.</p>
 
 </div>
-</div>
-
-
 </div>
 
 <!-- SEM 2 -->
 <div id="sem2" class="page">
   <div class="back-btn" onclick="showPage('main-page')">← Back</div>
-  <p>Coming soon...</p>
+
+  <div class="journey-grid">
+    <div class="journey-btn" onclick="showPage('a4')">Article 4</div>
+    <div class="journey-btn" onclick="showPage('a5')">Article 5</div>
+    <div class="journey-btn" onclick="showPage('a6')">Article 6</div>
+    <div class="journey-btn" onclick="showPage('a7')">Article 7</div>
+  </div>
 </div>
+
 <!-- ARTICLE 4 -->
 <div id="a4" class="page">
-<div class="back-btn" onclick="showPage('sem1')">← Back</div>
+<div class="back-btn" onclick="showPage('sem2')">← Back</div>
 <div class="article-body">
 
 <h1>Article 4: Second Semester Start</h1>
 
-<h3>1. Confidence</h3>
-<p>I returned with confidence.</p>
+<h3>1. New Beginning</h3>
+<p>After vacation, I returned with confidence and a positive mindset.</p>
 
-<h3>2. Learning</h3>
-<p>I improved mistakes.</p>
+<h3>2. Learning from Mistakes</h3>
+<p>I improved my habits and decided not to repeat past mistakes.</p>
 
 <h3>3. Responsibility</h3>
-<p>I understood value of money.</p>
+<p>I understood the value of money and became more responsible.</p>
 
 </div>
 </div>
 
 <!-- ARTICLE 5 -->
 <div id="a5" class="page">
-<div class="back-btn" onclick="showPage('sem1')">← Back</div>
+<div class="back-btn" onclick="showPage('sem2')">← Back</div>
 <div class="article-body">
 
-<h1>Article 5: Summer Problems</h1>
+<h1>Article 5: Summer Challenges</h1>
 
 <h3>1. Heat</h3>
-<p>Weather was very hot.</p>
+<p>Summer made hostel life very difficult.</p>
 
 <h3>2. Problems</h3>
-<p>No fans, mosquitoes, no sleep.</p>
+<p>Fans were not working and mosquitoes disturbed us at night.</p>
 
 <h3>3. Strength</h3>
-<p>We stayed strong.</p>
+<p>We stayed strong despite all problems.</p>
 
 </div>
 </div>
 
 <!-- ARTICLE 6 -->
 <div id="a6" class="page">
-<div class="back-btn" onclick="showPage('sem1')">← Back</div>
+<div class="back-btn" onclick="showPage('sem2')">← Back</div>
 <div class="article-body">
 
-<h1>Article 6: Ramadan</h1>
+<h1>Article 6: Ramadan Experience</h1>
 
 <h3>1. Religion</h3>
-<p>Focused on Namaz and Quran.</p>
+<p>We focused on Namaz and Quran.</p>
 
-<h3>2. Iftar Issue</h3>
-<p>Iftar was not good.</p>
+<h3>2. Iftar Issues</h3>
+<p>Iftar was not good and sometimes not enough.</p>
 
 <h3>3. Patience</h3>
-<p>Learned patience.</p>
+<p>This time taught us patience and gratitude.</p>
 
 </div>
 </div>
 
 <!-- ARTICLE 7 -->
 <div id="a7" class="page">
-<div class="back-btn" onclick="showPage('sem1')">← Back</div>
+<div class="back-btn" onclick="showPage('sem2')">← Back</div>
 <div class="article-body">
 
-<h1>Article 7: Online & Eid</h1>
+<h1>Article 7: Online Classes and Eid</h1>
 
 <h3>1. Online Classes</h3>
-<p>Internet issues created problems.</p>
+<p>We attended online classes but faced internet issues.</p>
 
 <h3>2. Difficulty</h3>
-<p>Hard to understand lectures.</p>
+<p>Understanding lectures was difficult due to technical problems.</p>
 
 <h3>3. Eid</h3>
-<p>Enjoyed Eid and returned to uni.</p>
+<p>We enjoyed Eid and then returned to university.</p>
 
+</div>
 </div>
 
 <script>
