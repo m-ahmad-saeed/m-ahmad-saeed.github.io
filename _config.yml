@@ -6,27 +6,20 @@ lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 
-# Layout
 show_excerpts: true
 show_frame: true
 show_sidebar: false
 show_minimal: false
 
-# Menu
 navigation:
   - {file: "index.html", title: "Home", sidebaricon: home}
   - {file: "about.md", title: "About", sidebaricon: address-card}
   - {file: "contact.md", title: "Contact", sidebaricon: phone}
-  - {file: "myblog.md", title: "My Blog", sidebaricon: blog}
 
 external:
   - {title: Mail, icon: envelope, url: "mailto:ahmadsaeed3029@gmail.com"}
   - {title: Github, icon: github, url: "https://github.com/m-ahmad-saeedz"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
-
-comments:
-#  disqus_shortname: ""
-#  isso_domain: ""
 
 plugins:
   - jekyll-feed
