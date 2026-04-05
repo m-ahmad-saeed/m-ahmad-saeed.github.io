@@ -65,27 +65,37 @@ title: My Journey
     transform: translateX(5px);
     background: rgba(255, 255, 255, 0.14);
   }
-  .semester-label {
+  .card-icon-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+  .card-icon-block .icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(0, 245, 212, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .card-icon-block .icon-circle i {
+    font-size: 26px;
+    color: #00f5d4;
+  }
+  .card-icon-block .semester-label {
     font-size: 12px;
     color: #00f5d4;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 6px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .semester-label i {
-    font-size: 15px;
-    color: #00f5d4;
-    width: 18px;
-    text-align: center;
   }
   .timeline-card h2 {
     font-size: 20px;
     color: #ffffff;
-    margin: 8px 0 5px 0;
+    margin: 4px 0 5px 0;
   }
   .date {
     font-size: 13px;
@@ -141,8 +151,11 @@ title: My Journey
   <!-- Admission -->
   <div class="timeline-item">
     <div class="timeline-card">
-      <div class="semester-label">
-        <i class="fas fa-flag-checkered"></i> Starting Point
+      <div class="card-icon-block">
+        <div class="icon-circle">
+          <i class="fas fa-flag-checkered"></i>
+        </div>
+        <div class="semester-label">Starting Point</div>
       </div>
       <h2>Admission — UET Faisalabad</h2>
       <div class="date"><i class="fas fa-calendar-alt"></i> 2023</div>
@@ -157,8 +170,11 @@ title: My Journey
   <!-- Semester 1 -->
   <div class="timeline-item">
     <div class="timeline-card">
-      <div class="semester-label">
-        <i class="fas fa-graduation-cap"></i> Semester 1
+      <div class="card-icon-block">
+        <div class="icon-circle">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="semester-label">Semester 1</div>
       </div>
       <h2>First Semester</h2>
       <div class="date"><i class="fas fa-calendar-alt"></i> Fall 2023</div>
@@ -181,8 +197,11 @@ title: My Journey
   <!-- Semester 2 -->
   <div class="timeline-item">
     <div class="timeline-card">
-      <div class="semester-label">
-        <i class="fas fa-graduation-cap"></i> Semester 2
+      <div class="card-icon-block">
+        <div class="icon-circle">
+          <i class="fas fa-book-open"></i>
+        </div>
+        <div class="semester-label">Semester 2</div>
       </div>
       <h2>Second Semester</h2>
       <div class="date"><i class="fas fa-calendar-alt"></i> Spring 2024</div>
