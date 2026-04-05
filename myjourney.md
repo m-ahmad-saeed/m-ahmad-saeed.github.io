@@ -65,7 +65,6 @@ title: My Journey
   .btn-date { font-size: 13px; color: #94a3b8; margin-top: 6px; }
   .btn-date i { color: #00f5d4; margin-right: 4px; }
 
-  /* === ARTICLE PAGE === */
   .page { display: none; }
   .page.active { display: block; }
 
@@ -123,34 +122,19 @@ title: My Journey
   }
   .article-body p { font-size: 15px; color: #cbd5e1; line-height: 1.9; margin-bottom: 15px; }
   .article-body h3 { font-size: 17px; color: #00f5d4; margin: 25px 0 10px 0; }
-  .article-body ul { list-style: none; padding: 0; margin: 0 0 15px 0; }
-  .article-body ul li {
-    font-size: 14px;
-    color: #cbd5e1;
-    padding: 8px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .article-body ul li:last-child { border-bottom: none; }
-  .article-body ul li i { color: #00f5d4; min-width: 16px; }
 
   @media (max-width: 768px) {
     .journey-grid { grid-template-columns: 1fr; }
   }
 </style>
 
-<!-- ===== MAIN PAGE ===== -->
 <div id="main-page" class="page active">
-
   <div class="journey-header">
     <h1>My Journey</h1>
-    <p>My academic path at UET Faisalabad — semester by semester</p>
+    <p>My academic path — from village to university</p>
   </div>
 
   <div class="journey-grid">
-
     <div class="journey-btn" onclick="showPage('admission')">
       <div class="icon-circle"><i class="fas fa-flag-checkered"></i></div>
       <div class="btn-label">Starting Point</div>
@@ -171,44 +155,40 @@ title: My Journey
       <div class="btn-title">Second Semester</div>
       <div class="btn-date"><i class="fas fa-calendar-alt"></i> Spring 2024</div>
     </div>
-
   </div>
 </div>
 
-<!-- ===== ADMISSION PAGE ===== -->
 <div id="admission" class="page">
   <button class="back-btn" onclick="showPage('main-page')">
     <i class="fas fa-arrow-left"></i> Back to My Journey
   </button>
+
   <div class="article-header">
     <div class="article-icon-circle"><i class="fas fa-flag-checkered"></i></div>
     <div>
-      <h1>Admission — UET Faisalabad</h1>
-      <p><i class="fas fa-calendar-alt"></i> 2023 &nbsp;|&nbsp; Starting Point</p>
+      <h1>From Village Challenges to Computer Engineering Dreams</h1>
+      <p><i class="fas fa-calendar-alt"></i> 2023 &nbsp;|&nbsp; My Admission Story</p>
     </div>
   </div>
+
   <div class="article-body">
-    <!-- APNA ARTICLE YAHAN LIKHEN -->
+    <h3>1. Overcoming Early Academic Struggles</h3>
     <p>
-      It was 2023 when I got admitted to UET Faisalabad in BS Computer Science.
-      Getting into UET was a dream come true for me. I worked hard in FSc and
-      cleared the merit-based admission test successfully.
+      My educational journey has never been easy. Coming from a small village, I faced several challenges during my FSc studies. The lack of nearby educational facilities and guidance made learning difficult. Every day, traveling to the city for college was exhausting and sometimes felt impossible. Despite these difficulties, I stayed determined and focused on my goal. The competitive environment of college pushed me to work harder, improve my skills, and adapt to new challenges.
     </p>
+
+    <h3>2. Preparing for the UET Test</h3>
     <p>
-      UET Faisalabad is one of the top engineering universities in Pakistan.
-      I chose Computer Science because I have always been passionate about
-      technology and programming. I knew this was the right path for me.
+      After completing my college studies, the next big challenge was preparing for the UET entry test. I knew that getting admission in Computer Engineering would not be easy. I made a proper study plan, revised important subjects, and practiced past papers regularly. This phase was mentally tough, but it taught me discipline, time management, and consistency. My previous struggles gave me the confidence to keep moving forward.
     </p>
-    <h3><i class="fas fa-list"></i> Details</h3>
-    <ul>
-      <li><i class="fas fa-university"></i> University of Engineering & Technology, Faisalabad</li>
-      <li><i class="fas fa-laptop"></i> Program: BS Computer Science</li>
-      <li><i class="fas fa-check-circle"></i> Successfully cleared merit-based admission</li>
-    </ul>
+
+    <h3>3. Achieving My Goal and Looking Forward</h3>
+    <p>
+      Finally, I passed the UET test and secured admission in Computer Engineering. This achievement was a turning point in my life. My journey from a village to a university proved that hard work and determination can overcome any obstacle. Now, I am continuing my journey with new goals, aiming to excel in my field and inspire others from similar backgrounds to follow their dreams.
+    </p>
   </div>
 </div>
 
-<!-- ===== SEMESTER 1 PAGE ===== -->
 <div id="sem1" class="page">
   <button class="back-btn" onclick="showPage('main-page')">
     <i class="fas fa-arrow-left"></i> Back to My Journey
@@ -217,37 +197,13 @@ title: My Journey
     <div class="article-icon-circle"><i class="fas fa-graduation-cap"></i></div>
     <div>
       <h1>First Semester</h1>
-      <p><i class="fas fa-calendar-alt"></i> Fall 2023 &nbsp;|&nbsp; Semester 1</p>
     </div>
   </div>
   <div class="article-body">
-    <!-- APNA ARTICLE YAHAN LIKHEN -->
-    <p>
-      My first semester at UET Faisalabad was an incredible experience.
-      Coming from school, university life was completely different.
-      I had to manage my time carefully between studies and other activities.
-    </p>
-    <p>
-      The most exciting subject was Introduction to Computing where I wrote
-      my first ever program — a simple Hello World in C++!
-    </p>
-    <h3><i class="fas fa-book"></i> Subjects</h3>
-    <ul>
-      <li><i class="fas fa-code"></i> Introduction to Computing</li>
-      <li><i class="fas fa-calculator"></i> Calculus & Analytical Geometry</li>
-      <li><i class="fas fa-atom"></i> Applied Physics</li>
-      <li><i class="fas fa-pen"></i> English Composition & Comprehension</li>
-      <li><i class="fas fa-star-and-crescent"></i> Islamic Studies / Ethics</li>
-    </ul>
-    <h3><i class="fas fa-star"></i> Highlights</h3>
-    <ul>
-      <li><i class="fas fa-star"></i> Got familiar with university environment</li>
-      <li><i class="fas fa-star"></i> Learned basics of programming</li>
-    </ul>
+    <p>Content coming soon...</p>
   </div>
 </div>
 
-<!-- ===== SEMESTER 2 PAGE ===== -->
 <div id="sem2" class="page">
   <button class="back-btn" onclick="showPage('main-page')">
     <i class="fas fa-arrow-left"></i> Back to My Journey
@@ -256,40 +212,17 @@ title: My Journey
     <div class="article-icon-circle"><i class="fas fa-book-open"></i></div>
     <div>
       <h1>Second Semester</h1>
-      <p><i class="fas fa-calendar-alt"></i> Spring 2024 &nbsp;|&nbsp; Semester 2</p>
     </div>
   </div>
   <div class="article-body">
-    <!-- APNA ARTICLE YAHAN LIKHEN -->
-    <p>
-      Second semester was more challenging and exciting than the first one.
-      We dived deeper into programming with Object Oriented Programming in C++.
-      I built my first small projects this semester which gave me a lot of confidence.
-    </p>
-    <p>
-      OOP was my favorite subject. Building real projects using classes and
-      objects in C++ was very satisfying!
-    </p>
-    <h3><i class="fas fa-book"></i> Subjects</h3>
-    <ul>
-      <li><i class="fas fa-code"></i> Object Oriented Programming (OOP)</li>
-      <li><i class="fas fa-calculator"></i> Linear Algebra</li>
-      <li><i class="fas fa-microchip"></i> Digital Logic Design</li>
-      <li><i class="fas fa-pen"></i> Communication Skills</li>
-      <li><i class="fas fa-flag"></i> Pakistan Studies</li>
-    </ul>
-    <h3><i class="fas fa-star"></i> Highlights</h3>
-    <ul>
-      <li><i class="fas fa-star"></i> Learned OOP concepts in C++</li>
-      <li><i class="fas fa-star"></i> Built first small projects</li>
-    </ul>
+    <p>Content coming soon...</p>
   </div>
 </div>
 
 <script>
-  function showPage(id) {
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 </script>
