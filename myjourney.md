@@ -85,16 +85,6 @@ title: My Journey
     color: #00f5d4;
     margin-right: 4px;
   }
-  .btn-arrow {
-    float: right;
-    color: #00f5d4;
-    font-size: 18px;
-    margin-top: -30px;
-    transition: 0.3s;
-  }
-  .journey-btn.active .btn-arrow {
-    transform: rotate(180deg);
-  }
 
   /* === ARTICLE PANEL === */
   .article-panel {
@@ -187,7 +177,6 @@ title: My Journey
       <div class="btn-label">Starting Point</div>
       <div class="btn-title">Admission</div>
       <div class="btn-date"><i class="fas fa-calendar-alt"></i> 2023</div>
-      <i class="fas fa-chevron-down btn-arrow"></i>
     </button>
   </div>
 
@@ -200,7 +189,6 @@ title: My Journey
       <div class="btn-label">Semester 1</div>
       <div class="btn-title">First Semester</div>
       <div class="btn-date"><i class="fas fa-calendar-alt"></i> Fall 2023</div>
-      <i class="fas fa-chevron-down btn-arrow"></i>
     </button>
   </div>
 
@@ -213,7 +201,6 @@ title: My Journey
       <div class="btn-label">Semester 2</div>
       <div class="btn-title">Second Semester</div>
       <div class="btn-date"><i class="fas fa-calendar-alt"></i> Spring 2024</div>
-      <i class="fas fa-chevron-down btn-arrow"></i>
     </button>
   </div>
 
@@ -222,15 +209,14 @@ title: My Journey
     <h3><i class="fas fa-flag-checkered"></i> &nbsp;My Admission Story</h3>
     <p>
       <!-- APNA ARTICLE YAHAN LIKHEN -->
-      It was 2023 when I got admitted to UET Faisalabad in BS Computer Science. 
-      Getting into UET was a dream come true for me. I worked hard in FSc and 
-      cleared the merit-based admission test successfully. The day I got my 
-      admission letter was one of the happiest days of my life.
+      It was 2023 when I got admitted to UET Faisalabad in BS Computer Science.
+      Getting into UET was a dream come true for me. I worked hard in FSc and
+      cleared the merit-based admission test successfully.
     </p>
     <p>
-      UET Faisalabad is one of the top engineering universities in Pakistan. 
-      I chose Computer Science because I have always been passionate about 
-      technology and programming. I knew this was the right path for me.
+      UET Faisalabad is one of the top engineering universities in Pakistan.
+      I chose Computer Science because I have always been passionate about
+      technology and programming.
     </p>
     <button class="close-btn" onclick="togglePanel('admission', null)">
       <i class="fas fa-times"></i> Close
@@ -242,22 +228,20 @@ title: My Journey
     <h3><i class="fas fa-graduation-cap"></i> &nbsp;First Semester Experience</h3>
     <p>
       <!-- APNA ARTICLE YAHAN LIKHEN -->
-      My first semester at UET Faisalabad was an incredible experience. 
-      Coming from school, university life was completely different. 
-      I had to manage my time carefully between studies and other activities.
+      My first semester at UET Faisalabad was an incredible experience.
+      Coming from school, university life was completely different.
     </p>
     <h4><i class="fas fa-book"></i> Subjects I Studied</h4>
     <ul>
-      <li><i class="fas fa-code"></i> Introduction to Computing — Learned basics of computers and programming</li>
-      <li><i class="fas fa-calculator"></i> Calculus & Analytical Geometry — Challenging but very interesting</li>
-      <li><i class="fas fa-atom"></i> Applied Physics — Fun experiments in the lab</li>
-      <li><i class="fas fa-pen"></i> English Composition — Improved my writing skills</li>
-      <li><i class="fas fa-star-and-crescent"></i> Islamic Studies — Learned about Islamic values</li>
+      <li><i class="fas fa-code"></i> Introduction to Computing</li>
+      <li><i class="fas fa-calculator"></i> Calculus & Analytical Geometry</li>
+      <li><i class="fas fa-atom"></i> Applied Physics</li>
+      <li><i class="fas fa-pen"></i> English Composition & Comprehension</li>
+      <li><i class="fas fa-star-and-crescent"></i> Islamic Studies / Ethics</li>
     </ul>
     <p>
-      The most exciting subject was Introduction to Computing where I wrote 
-      my first ever program. It was a simple "Hello World" in C++ but it 
-      felt amazing to see it run on screen!
+      The most exciting subject was Introduction to Computing where I wrote
+      my first ever program — a simple Hello World in C++!
     </p>
     <button class="close-btn" onclick="togglePanel('sem1', null)">
       <i class="fas fa-times"></i> Close
@@ -269,22 +253,20 @@ title: My Journey
     <h3><i class="fas fa-book-open"></i> &nbsp;Second Semester Experience</h3>
     <p>
       <!-- APNA ARTICLE YAHAN LIKHEN -->
-      Second semester was more challenging and exciting than the first one. 
-      We dived deeper into programming with Object Oriented Programming in C++. 
-      I built my first small projects this semester which gave me a lot of confidence.
+      Second semester was more challenging and exciting than the first one.
+      We dived deeper into programming with Object Oriented Programming in C++.
     </p>
     <h4><i class="fas fa-book"></i> Subjects I Studied</h4>
     <ul>
-      <li><i class="fas fa-code"></i> OOP in C++ — Learned classes, objects, inheritance</li>
-      <li><i class="fas fa-calculator"></i> Linear Algebra — Matrices and vectors</li>
-      <li><i class="fas fa-microchip"></i> Digital Logic Design — Gates and circuits</li>
-      <li><i class="fas fa-pen"></i> Communication Skills — Presentations and speaking</li>
-      <li><i class="fas fa-flag"></i> Pakistan Studies — History of Pakistan</li>
+      <li><i class="fas fa-code"></i> Object Oriented Programming (OOP)</li>
+      <li><i class="fas fa-calculator"></i> Linear Algebra</li>
+      <li><i class="fas fa-microchip"></i> Digital Logic Design</li>
+      <li><i class="fas fa-pen"></i> Communication Skills</li>
+      <li><i class="fas fa-flag"></i> Pakistan Studies</li>
     </ul>
     <p>
-      OOP was my favorite subject this semester. Building real projects using 
-      classes and objects in C++ was very satisfying. I also enjoyed Digital 
-      Logic Design where we learned how computers work at the hardware level.
+      OOP was my favorite subject. Building real projects using classes and
+      objects in C++ was very satisfying!
     </p>
     <button class="close-btn" onclick="togglePanel('sem2', null)">
       <i class="fas fa-times"></i> Close
@@ -298,15 +280,12 @@ title: My Journey
     const panel = document.getElementById(id);
     const isOpen = panel.classList.contains('open');
 
-    // Close all panels and buttons
     document.querySelectorAll('.article-panel').forEach(p => p.classList.remove('open'));
     document.querySelectorAll('.journey-btn').forEach(b => b.classList.remove('active'));
 
-    // Open clicked one if it was closed
     if (!isOpen) {
       panel.classList.add('open');
       if (btn) btn.classList.add('active');
-      // Scroll to article
       setTimeout(() => {
         panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 100);
