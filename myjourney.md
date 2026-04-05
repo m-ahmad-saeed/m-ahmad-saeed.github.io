@@ -3,6 +3,7 @@ layout: default
 title: My Journey
 ---
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
   .journey-header {
     background: rgba(255, 255, 255, 0.08);
@@ -64,26 +65,37 @@ title: My Journey
     transform: translateX(5px);
     background: rgba(255, 255, 255, 0.14);
   }
-  .timeline-card .semester-label {
+  .semester-label {
     font-size: 12px;
     color: #00f5d4;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .semester-label i {
+    font-size: 15px;
+    color: #00f5d4;
+    width: 18px;
+    text-align: center;
   }
   .timeline-card h2 {
     font-size: 20px;
     color: #ffffff;
-    margin-bottom: 5px;
+    margin: 8px 0 5px 0;
   }
-  .timeline-card .date {
+  .date {
     font-size: 13px;
     color: #94a3b8;
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
   }
-  .timeline-card .date i {
-    margin-right: 5px;
+  .date i {
     color: #00f5d4;
   }
   .timeline-card ul {
@@ -107,6 +119,7 @@ title: My Journey
     color: #00f5d4;
     font-size: 14px;
     min-width: 16px;
+    text-align: center;
   }
   .section-title {
     font-size: 13px;
@@ -128,12 +141,14 @@ title: My Journey
   <!-- Admission -->
   <div class="timeline-item">
     <div class="timeline-card">
-      <div class="semester-label"><i class="fas fa-door-open"></i> &nbsp;Starting Point</div>
+      <div class="semester-label">
+        <i class="fas fa-flag-checkered"></i> Starting Point
+      </div>
       <h2>Admission — UET Faisalabad</h2>
       <div class="date"><i class="fas fa-calendar-alt"></i> 2023</div>
       <ul>
         <li><i class="fas fa-university"></i> University of Engineering & Technology, Faisalabad</li>
-        <li><i class="fas fa-laptop-code"></i> Program: BS Computer Science</li>
+        <li><i class="fas fa-laptop"></i> Program: BS Computer Science</li>
         <li><i class="fas fa-check-circle"></i> Successfully cleared merit-based admission</li>
       </ul>
     </div>
@@ -142,7 +157,9 @@ title: My Journey
   <!-- Semester 1 -->
   <div class="timeline-item">
     <div class="timeline-card">
-      <div class="semester-label"><i class="fas fa-book-open"></i> &nbsp;Semester 1</div>
+      <div class="semester-label">
+        <i class="fas fa-graduation-cap"></i> Semester 1
+      </div>
       <h2>First Semester</h2>
       <div class="date"><i class="fas fa-calendar-alt"></i> Fall 2023</div>
       <div class="section-title">Subjects</div>
@@ -150,8 +167,8 @@ title: My Journey
         <li><i class="fas fa-code"></i> Introduction to Computing</li>
         <li><i class="fas fa-calculator"></i> Calculus & Analytical Geometry</li>
         <li><i class="fas fa-atom"></i> Applied Physics</li>
-        <li><i class="fas fa-language"></i> English Composition & Comprehension</li>
-        <li><i class="fas fa-mosque"></i> Islamic Studies / Ethics</li>
+        <li><i class="fas fa-pen"></i> English Composition & Comprehension</li>
+        <li><i class="fas fa-star-and-crescent"></i> Islamic Studies / Ethics</li>
       </ul>
       <div class="section-title">Highlights</div>
       <ul>
@@ -164,7 +181,9 @@ title: My Journey
   <!-- Semester 2 -->
   <div class="timeline-item">
     <div class="timeline-card">
-      <div class="semester-label"><i class="fas fa-book-open"></i> &nbsp;Semester 2</div>
+      <div class="semester-label">
+        <i class="fas fa-graduation-cap"></i> Semester 2
+      </div>
       <h2>Second Semester</h2>
       <div class="date"><i class="fas fa-calendar-alt"></i> Spring 2024</div>
       <div class="section-title">Subjects</div>
@@ -172,7 +191,7 @@ title: My Journey
         <li><i class="fas fa-code"></i> Object Oriented Programming (OOP)</li>
         <li><i class="fas fa-calculator"></i> Linear Algebra</li>
         <li><i class="fas fa-microchip"></i> Digital Logic Design</li>
-        <li><i class="fas fa-language"></i> Communication Skills</li>
+        <li><i class="fas fa-pen"></i> Communication Skills</li>
         <li><i class="fas fa-flag"></i> Pakistan Studies</li>
       </ul>
       <div class="section-title">Highlights</div>
