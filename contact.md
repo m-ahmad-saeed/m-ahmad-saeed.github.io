@@ -80,7 +80,6 @@ title: Contact
 
 <div class="contact-cards">
 
-  <!-- Email -->
   <div class="contact-card">
     <div class="icon">
       <i class="fas fa-envelope"></i>
@@ -89,7 +88,6 @@ title: Contact
     <p><a href="mailto:ahmadsaeed3029@gmail.com">ahmadsaeed3029@gmail.com</a></p>
   </div>
 
-  <!-- GitHub -->
   <div class="contact-card">
     <div class="icon">
       <i class="fab fa-github"></i>
@@ -98,7 +96,6 @@ title: Contact
     <p><a href="https://github.com/m-ahmad-saeedz" target="_blank">m-ahmad-saeedz</a></p>
   </div>
 
-  <!-- WhatsApp -->
   <div class="contact-card">
     <div class="icon">
       <i class="fab fa-whatsapp"></i>
@@ -107,7 +104,6 @@ title: Contact
     <p><a href="https://wa.me/923148664274" target="_blank">+92 3148664274</a></p>
   </div>
 
-  <!-- University -->
   <div class="contact-card">
     <div class="icon">
       <i class="fas fa-graduation-cap"></i>
