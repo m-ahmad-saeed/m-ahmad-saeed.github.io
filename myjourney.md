@@ -97,14 +97,14 @@ title: My Journey
 
 <h1>Article 1: My First Semester Journey</h1>
 
-<h3>1. A Difficult Start</h3>
-<p>I came from another city and faced many problems in hostel. Food was not good and hall was crowded.</p>
+<h3>1. A Difficult Start in a New Place</h3>
+<p>I came from another city, and starting my first semester was not easy. My first day at university was very difficult because it was my first experience living in a hostel. I missed my home, my family, and my comfortable life. Everything felt new and uncomfortable. The hostel environment was also not good for me. The food was not tasty, and I was given a big hall where many boys were living together. There was noise and no privacy, which made it hard for me to adjust..</p>
 
-<h3>2. Adjusting Life</h3>
-<p>Classes started and I slowly adjusted with study and hostel life.</p>
+<h3>2. Facing Hostel Life and Starting Studies</h3>
+<p>The next day, we went to the university, and our classes started. This was the beginning of a new academic journey. The environment was different from college, and the level of study was more difficult. I had to manage both hostel life and studies at the same time. In the beginning, it was very hard for me, but slowly I started understanding things and adjusting to this new life..</p>
 
 <h3>3. Staying Strong</h3>
-<p>I stayed strong and continued my journey.</p>
+<p>I Even though I faced many problems, I decided to stay strong. I knew that this was an important step in my life. These challenges made me more independent and responsible. Slowly, I started feeling better and became part of university life..</p>
 
 </div>
 </div>
@@ -116,14 +116,14 @@ title: My Journey
 
 <h1>Article 2: First Semester Exams</h1>
 
-<h3>1. Hard Work</h3>
-<p>I decided to study hard and understand concepts.</p>
+<h3>1.Making a Promise to Work Hard</h3>
+<p>I When our studies started, I made a strong decision that I would study hard and become successful in life. Teachers told us that university education is conceptual, which means we must understand topics deeply instead of just memorizing them.</p>
 
-<h3>2. System Difficulty</h3>
-<p>University system was difficult but I improved.</p>
+<h3>2. Understanding the New System</h3>
+<p>The paper system was completely different from what I experienced before. At first, I faced difficulty in understanding it. I felt confused and stressed, but I did not give up. I started asking questions, studying more, and improving my concepts step by step.</p>
 
 <h3>3. Mid Success</h3>
-<p>I passed mid exams with good marks.</p>
+<p>I After two months, our mid exams started. It was my first university exam, and it was difficult. However, I worked hard and gave my best. When the results came, I passed with good marks. This success increased my confidence..</p>
 
 </div>
 </div>
@@ -133,20 +133,28 @@ title: My Journey
 <div class="back-btn" onclick="showPage('sem1')">← Back</div>
 <div class="article-body">
 
-<h1>Article 3: Mid to Final</h1>
+<h1>Article 3: From Midterms to Finals: Friendship, Growth, and Success</h1>
 
-<h3>1. Study Improvement</h3>
-<p>I improved study habits.</p>
+<h3>1.Improving Study Habits</h3>
+<p>I After mid exams, I gained some experience about university studies. I started managing my time better and focused more on understanding concepts. I created a study routine and followed it regularly.</p>
 
-<h3>2. Friends</h3>
-<p>We studied together and helped each other.</p>
+<h3>2. Friendship and Support</h3>
+<p>In the hostel, we became friends with each other. We studied together, helped each other in difficult subjects, and shared our problems. Sometimes, we also went out for outings to relax. Although the hostel food was not good, we managed everything together.</p>
 
-<h3>3. Final Success</h3>
-<p>I passed finals with good marks.</p>
+<h3>3. Final Exams Achievement</h3>
+<p>After two months, final exams started. They were challenging, but I was better prepared this time. I gave my best effort, and Alhamdulillah, I passed with good marks. It was a proud moment for me..</p>
 
 </div>
 </div>
 
+
+</div>
+
+<!-- SEM 2 -->
+<div id="sem2" class="page">
+  <div class="back-btn" onclick="showPage('main-page')">← Back</div>
+  <p>Coming soon...</p>
+</div>
 <!-- ARTICLE 4 -->
 <div id="a4" class="page">
 <div class="back-btn" onclick="showPage('sem1')">← Back</div>
@@ -220,13 +228,6 @@ title: My Journey
 <h3>3. Eid</h3>
 <p>Enjoyed Eid and returned to uni.</p>
 
-</div>
-</div>
-
-<!-- SEM 2 -->
-<div id="sem2" class="page">
-  <div class="back-btn" onclick="showPage('main-page')">← Back</div>
-  <p>Coming soon...</p>
 </div>
 
 <script>
