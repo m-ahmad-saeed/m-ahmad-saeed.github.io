@@ -1,3 +1,9 @@
+---
+layout: post
+title: "My First Post"
+date: 2024-06-26
+---
+
 ARTICLE 1
 Why I Created a GitHub Portfolio as a Computer Engineering Student
 
