@@ -16,6 +16,7 @@ navigation:
   - {file: "about.md", title: "About", sidebaricon: address-card}
   - {file: "contact.md", title: "Contact", sidebaricon: phone}
   - {file: "myjourney.md", title: "My Journey", sidebaricon: road}
+  - {file: "blog.md", title: "Blog", sidebaricon: pencil}
 
 external:
   - {title: Mail, icon: envelope, url: "mailto:ahmadsaeed3029@gmail.com"}
