@@ -1,8 +1,25 @@
 ---
-layout: post
-title: "My First Post"
-date: 2024-06-26
+layout: default
+title: Blog
+permalink: /blog/
 ---
+
+## Blog Posts
+
+{% for post in site.posts %}
+<article>
+  <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+  <p><small>{{ post.date | date: "%B %d, %Y" }}</small></p>
+  {% if post.description %}
+    <p>{{ post.description }}</p>
+  {% endif %}
+  <hr>
+</article>
+{% endfor %}
+
+{% if site.posts.size == 0 %}
+  <p>No posts yet.</p>
+{% endif %}
 THIS IS MY PORTFOLIO PURPOSE
 ARTICLE 1
 Why I Created a GitHub Portfolio as a Computer Engineering Student
